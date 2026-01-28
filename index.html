@@ -6,30 +6,30 @@
   <title>PuzzleMint</title>
   <style>
     body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:#0b0f19;color:#e8eefc}
-    .wrap{max-width:900px;margin:0 auto;padding:20px}
-    .card{background:#121a2b;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:18px;margin-top:14px}
+    .wrap{max-width:980px;margin:0 auto;padding:18px}
+    .card{background:#121a2b;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px;margin-top:12px}
     a{color:#4da3ff;text-decoration:none}
-    .btn{display:inline-block;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.14);margin-right:10px;margin-top:10px}
-    .muted{color:#a9b6d6}
+    .btn{display:inline-block;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.14);margin-top:10px}
+    .muted{color:#a9b6d6;line-height:1.35}
   </style>
 </head>
 <body>
   <div class="wrap">
     <h1>PuzzleMint</h1>
-    <p class="muted">Mobile-friendly daily puzzle games.</p>
+    <p class="muted">Mobile-first daily puzzle games.</p>
 
     <div class="card">
-      <h2 style="margin:0 0 8px;">Word Search</h2>
-      <p class="muted" style="margin:0 0 10px;">Coming next: Daily Word Search.</p>
-      <a class="btn" href="#" aria-disabled="true">Play (soon)</a>
+      <h2 style="margin:0 0 8px;">Games</h2>
+      <p class="muted" style="margin:0;">Word Search will be the first game.</p>
+      <a class="btn" href="games/">Go to Games</a>
     </div>
 
     <div class="card">
-      <p class="muted" style="margin:0;">More games coming soon.</p>
+      <h2 style="margin:0 0 8px;">About</h2>
+      <p class="muted" style="margin:0;">
+        This site is a work in progress. New puzzles will be added regularly.
+      </p>
     </div>
-
-    <p class="muted" style="margin-top:16px;font-size:.95rem;">© <span id="y"></span> PuzzleMint</p>
   </div>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
