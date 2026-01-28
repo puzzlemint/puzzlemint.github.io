@@ -4,10 +4,37 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Word Search</title>
+  <link rel="stylesheet" href="../assets/style.css" />
 </head>
-<body style="font-family:system-ui; padding:20px;">
-  <h1>Word Search</h1>
-  <p>Coming next ✅</p>
-  <p><a href="./index.html">← Back to Games</a> | <a href="../index.html">Home</a></p>
+<body>
+  <div class="header">
+    <div class="wrap">
+      <h1 style="margin:0;">Word Search</h1>
+      <p class="sub">Tap a start letter, then tap an end letter in a straight line.</p>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <div class="toolbar">
+      <a class="btn" href="./index.html">← Games</a>
+      <a class="btn" href="../index.html">Home</a>
+      <span class="pill" id="meta"></span>
+    </div>
+
+    <section class="gameShell">
+      <div class="card board">
+        <div id="grid" class="gridBoard" aria-label="Word search grid"></div>
+        <div class="notice" id="message"></div>
+      </div>
+
+      <aside class="card">
+        <h2 style="margin:0 0 10px;">Find these words</h2>
+        <div class="wordList" id="words"></div>
+        <p class="small" style="margin-top:12px;">Words can be horizontal, vertical, or diagonal — forward or backward.</p>
+      </aside>
+    </section>
+  </main>
+
+  <script src="../assets/wordsearch.js"></script>
 </body>
 </html>
